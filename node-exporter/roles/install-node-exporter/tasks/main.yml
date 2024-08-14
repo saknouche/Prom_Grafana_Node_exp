@@ -1,0 +1,12 @@
+---
+- name: Create node-exporter container 
+  community.docker.docker_container:
+    name: node-exporter
+    image: prom/node-exporter:latest
+    ports:
+      - "9100:9100"
+    volumes:
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /:/rootfs:ro
+

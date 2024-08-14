@@ -1,0 +1,19 @@
+capsule:
+  hosts:
+    preprod:
+      ansible_host:  172.16.96.150
+      # hostname: backend.soufianeaknouche.ovh
+#      ports: [ "22", "80", "443" ]
+    # backend.preprod:
+    #   ansible_host: 35.181.204.149
+    #   hostname: backend.preprod.teddy-capsule.site
+    #   ports: [ "22", "80", "443" ]
+    
+# all:
+#   children:
+#     prod:
+#       hosts:
+#         client1:
+#     staging:
+#       hosts:
+#         client2:
